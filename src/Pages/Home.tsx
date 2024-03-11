@@ -1,3 +1,4 @@
+import Competences from "../Components/Competences"
 import Hero from "../Components/Hero"
 import Profil from "../Components/Profil"
 
@@ -7,6 +8,7 @@ function Home() {
       <div className="font-montserrat">
         <Hero />
         <Profil />
+        <Competences />
       </div>
     </>
   )

@@ -1,3 +1,6 @@
+import { FaGithub } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa6"
+
 function Hero() {
   return (
     <>
@@ -13,6 +16,18 @@ function Hero() {
           Front-end.
           <br />
           J'aime construire de belles interfaces & expériences 👨‍💻
+          <span className="flex gap-4 py-4">
+            <a href="https://github.com/Pir4a" target="_blank" className="">
+              <FaGithub className="cursor-pointer hover:scale-125 transition-all duration-200" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/st%C3%A9phane-dedu-14579a266/"
+              target="_blank"
+              className=""
+            >
+              <FaLinkedin className="cursor-pointer hover:scale-125 transition-all duration-200" />
+            </a>
+          </span>
         </h3>
         <p className="text-lg pt-16">
           Contactez-moi 👉{" "}
