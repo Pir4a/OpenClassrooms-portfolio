@@ -4,12 +4,12 @@ import { FaGithub } from "react-icons/fa"
 function Autres() {
   return (
     <div className="flex justify-center items-center py-32">
-      <div className=" flex gap-16 justify-center w-full">
-        <span className="text-blue-600 font-semibold text-2xl  w-[10%] flex justify-end">
+      <div className=" flex gap-16 justify-center w-full lg:flex-row flex-col lg:items-start items-center">
+        <span className="text-blue-600 font-semibold text-2xl  lg:w-[10%] flex lg:justify-end">
           Autres Projets
         </span>
 
-        <div className=" leading-7 w-2/5 flex flex-col justify-center gap-12">
+        <div className=" leading-7  2xl:w-2/5 w-3/5 flex flex-col justify-center gap-12">
           <div className="flex flex-col justify-center gap-2">
             <a href="https://krypto-app-xi.vercel.app/" target="_blank">
               <h3 className="flex items-center gap-4 group cursor-pointer font-medium">
