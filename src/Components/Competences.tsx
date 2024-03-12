@@ -1,6 +1,31 @@
+import { useEffect, useState } from "react"
+
 function Competences() {
+  const [revealCompetences, setRevealCompetences] = useState(false)
+
+  useEffect(() => {
+    const onPageScroll = () => {
+      if (window.scrollY < 400) {
+        setRevealCompetences(true)
+      } else {
+        setRevealCompetences(false)
+      }
+    }
+    window.addEventListener("scroll", onPageScroll)
+
+    return () => {
+      window.removeEventListener("scroll", onPageScroll)
+    }
+  }, [])
+
   return (
-    <div className="flex justify-center items-center py-32">
+    <div
+      className={
+        revealCompetences === true
+          ? "opacity-0 transition-all duration-300 ease-in-out flex justify-center items-center py-16 "
+          : "flex justify-center items-center py-16 opacity-100 transition-all duration-300 ease-in-out"
+      }
+    >
       <div className=" flex gap-16 justify-center w-full">
         <span className="text-blue-600 font-semibold text-2xl  w-[10%] flex justify-end">
           Compétences

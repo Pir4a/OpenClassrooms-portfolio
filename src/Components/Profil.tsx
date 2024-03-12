@@ -1,6 +1,31 @@
+import { useEffect, useState } from "react"
+
 function Profil() {
+  const [reveal, setReveal] = useState(false)
+
+  useEffect(() => {
+    const onPageScroll = () => {
+      if (window.scrollY < 100) {
+        setReveal(true)
+      } else {
+        setReveal(false)
+      }
+    }
+    window.addEventListener("scroll", onPageScroll)
+
+    return () => {
+      window.removeEventListener("scroll", onPageScroll)
+    }
+  }, [])
+
   return (
-    <div className="flex justify-center items-center">
+    <div
+      className={
+        reveal === true
+          ? "opacity-0 transition-all duration-300 ease-in-out pb-16"
+          : " opacity-100 flex justify-center items-center transition-all duration-300 ease-in-out pb-16"
+      }
+    >
       <div className=" flex gap-16 justify-center w-full">
         <span className="text-blue-600 font-semibold text-2xl w-[10%] flex justify-end">
           Profil

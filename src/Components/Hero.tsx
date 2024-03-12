@@ -1,7 +1,29 @@
+import { useEffect, useState } from "react"
 import { FaGithub } from "react-icons/fa"
-import { FaLinkedin } from "react-icons/fa6"
+import { FaCircleArrowUp, FaLinkedin } from "react-icons/fa6"
 
 function Hero() {
+  const [goUp, setGoUp] = useState(false)
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  useEffect(() => {
+    const onPageScroll = () => {
+      if (window.scrollY > 600) {
+        setGoUp(true)
+      } else {
+        setGoUp(false)
+      }
+    }
+    window.addEventListener("scroll", onPageScroll)
+
+    return () => {
+      window.removeEventListener("scroll", onPageScroll)
+    }
+  }, [])
+
   return (
     <>
       <div className="flex flex-col gap-16 h-dvh lg:pl-[18%] items-center lg:items-start text-center lg:text-left justify-center px-4 lg:px-0 ">
@@ -32,7 +54,7 @@ function Hero() {
         <p className="text-lg pt-16">
           Contactez-moi 👉{" "}
           <a
-            href="stephane.dedu@gmail.com"
+            href="mailto: stephane.dedu@gmail.com"
             target="_blank"
             className="relative p-1 group hover:text-white transition-all duration-300 ease-in-out origin-bottom font-medium"
           >
@@ -40,6 +62,14 @@ function Hero() {
             <span className="absolute -z-10 left-0 right-0 bottom-0 h-[3px] bg-blue-600 group-hover:h-full transition-all duration-300"></span>
           </a>
         </p>
+      </div>
+      <div
+        onClick={scrollToTop}
+        className={`fixed cursor-pointer bottom-8 right-8 ${
+          goUp ? "block" : "hidden"
+        }`}
+      >
+        <FaCircleArrowUp className="text-blue-600 size-12" />
       </div>
     </>
   )
