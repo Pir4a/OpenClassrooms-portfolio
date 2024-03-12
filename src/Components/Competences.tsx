@@ -26,12 +26,12 @@ function Competences() {
           : "flex justify-center items-center py-16 opacity-100 transition-all duration-300 ease-in-out"
       }
     >
-      <div className=" flex gap-16 justify-center w-full">
-        <span className="text-blue-600 font-semibold text-2xl  w-[10%] flex justify-end">
+      <div className=" flex gap-16 justify-center w-full lg:flex-row  flex-col lg:items-start items-center lg:text-left text-center">
+        <span className="text-blue-600 font-semibold text-2xl  lg:w-[10%] flex justify-end">
           Compétences
         </span>
 
-        <div className=" leading-7 w-2/5 grid grid-cols-4 grid-rows-1">
+        <div className=" leading-7  2xl:w-2/5 lg:w-3/5 w-[55%] grid lg:grid-cols-4 lg:grid-rows-1 lg:gap-0 gap-8">
           <span>
             <h3 className="font-medium text-lg">Langages</h3>
             <p>JavaScript</p>

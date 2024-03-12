@@ -22,16 +22,16 @@ function Profil() {
     <div
       className={
         reveal === true
-          ? "opacity-0 transition-all duration-300 ease-in-out pb-16"
-          : " opacity-100 flex justify-center items-center transition-all duration-300 ease-in-out pb-16"
+          ? "opacity-0 transition-all duration-300 ease-in-out pb-16 2xl:pt-0 pt-32"
+          : " opacity-100 flex justify-center items-center transition-all duration-300 ease-in-out pb-16 2xl:pt-0 pt-32"
       }
     >
-      <div className=" flex gap-16 justify-center w-full">
-        <span className="text-blue-600 font-semibold text-2xl w-[10%] flex justify-end">
+      <div className=" flex gap-16 justify-center w-full lg:flex-row  flex-col lg:items-start items-center lg:text-left text-center">
+        <span className="text-blue-600 font-semibold text-2xl lg:w-[10%] flex justify-end">
           Profil
         </span>
 
-        <p className=" leading-7 w-2/5">
+        <p className=" leading-7 2xl:w-2/5 lg:w-3/5 w-5/6">
           Salut, moi c'est Stéphane, développeur front-end actuellement en
           Formation Developpeur Web chez OpenClassrooms, je code et ai appris ce
           dernier en auto didacte depuis Novembre 2023.
