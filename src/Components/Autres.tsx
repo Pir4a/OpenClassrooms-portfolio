@@ -4,8 +4,8 @@ import { FaGithub } from "react-icons/fa"
 function Autres() {
   return (
     <div className="flex justify-center items-center py-32">
-      <div className=" flex gap-16 justify-center w-full lg:flex-row flex-col lg:items-start items-center">
-        <span className="text-blue-600 font-semibold text-2xl  lg:w-[10%] flex lg:justify-end">
+      <div className=" flex gap-16 justify-center w-full lg:flex-row flex-col items-center lg:flex-row flex-col lg:items-start items-center">
+        <span className="text-blue-600 font-semibold text-2xl  lg:lg:w-[10%] flex lg:lg:justify-end">
           Autres Projets
         </span>
 
