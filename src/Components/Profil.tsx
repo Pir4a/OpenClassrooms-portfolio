@@ -31,7 +31,7 @@ function Profil() {
           Profil
         </span>
 
-        <p className=" leading-7 2xl:w-2/5 lg:w-3/5 w-5/6">
+        <p className=" leading-7 2xl:w-3/5 lg:w-3/5 w-5/6 lg:text-lg">
           Salut, moi c'est Stéphane, développeur front-end actuellement en
           Formation Developpeur Web chez OpenClassrooms, je code et ai appris ce
           dernier en auto didacte depuis Novembre 2023.

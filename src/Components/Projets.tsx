@@ -1,8 +1,3 @@
-import ecommerce from "../assets/Ecommerce.png"
-import gym from "../assets/zyzzgym.png"
-import carrental from "../assets/carrental.png"
-import { FaCss3, FaGithub, FaReact } from "react-icons/fa"
-import { SiTailwindcss, SiTypescript } from "react-icons/si"
 import { useEffect, useState } from "react"
 import ProjetCard from "./ProjetCard"
 
@@ -33,11 +28,11 @@ function Projets() {
       }
     >
       <div className=" flex gap-16 justify-center w-full lg:flex-row  flex-col lg:items-start items-center lg:text-left text-center">
-        <span className="text-blue-600 font-semibold text-2xl  lg:w-[10%] flex justify-end">
+        <span className="text-blue-600 font-semibold text-2xl  lg:w-[5%] flex justify-start">
           Projets
         </span>
 
-        <div className=" leading-7 2xl:w-2/5 lg:w-3/5 w-11/12 grid xl:grid-cols-4 lg:grid-cols-5 grid-cols-1 lg:place-items-start place-items-center grid-rows-1 lg:gap-y-20 gap-y-8 lg:gap-x-8">
+        <div className=" leading-7 xl:w-3/5 lg:w-3/5 w-11/12 grid xl:grid-cols-4 lg:grid-cols-5 grid-cols-1 lg:place-items-start place-items-center grid-rows-1 lg:gap-y-20 gap-y-8 lg:gap-x-8">
           <ProjetCard />
         </div>
       </div>
