@@ -6,15 +6,7 @@ import { SiTailwindcss, SiTypescript } from "react-icons/si"
 import { useEffect, useState } from "react"
 import ProjetCard from "./ProjetCard"
 
-function Projets(
-  projectName: string,
-  projectDescription: string,
-  technoOne: string,
-  technoTwo: string,
-  gitLink: string,
-  liveLink: string,
-  projectImg: string
-) {
+function Projets() {
   const [revealProjets, setRevealProjets] = useState(false)
 
   useEffect(() => {
