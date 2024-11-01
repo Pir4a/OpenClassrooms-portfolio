@@ -1,6 +1,6 @@
 import { BsArrowRight } from "react-icons/bs"
 import { FaGithub } from "react-icons/fa"
-import autresProjectsData from "../autresProjectsData"
+import autresProjectsData from "../autresProjectsData.json"
 
 function Autres() {
   return (
