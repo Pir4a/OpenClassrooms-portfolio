@@ -72,9 +72,9 @@ function ProjetCard() {
               href={data.gitLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="2xl:pt-8 flex items-center justify-center lg:justify-start"
+              className="2xl:pt-8 flex items-center justify-center lg:justify-start hover:scale-110 transition-all duration-150"
             >
-              <FaGithub className="size-8 cursor-pointer hover:scale-110 transition-all duration-150" />
+              <FaGithub className="size-8 cursor-pointer" />
               <span className="pl-2">Github</span>
             </a>{" "}
             {/* Affichage de l'image pour les petits écrans */}
