@@ -6,7 +6,7 @@
     "technos": ["React", "TypeScript", "TailwindCSS"],
     "gitLink": "https://github.com/Pir4a/car-rent-website",
     "liveLink": "https://car-rent-website-six.vercel.app",
-    "projectImg": "/src/assets/carrental.png"
+    "projectImg": "/static/carrental.png"
   },
   {
     "projectName": "Kasa (OC)",
@@ -15,7 +15,7 @@
     "technos": ["React", "SaSS"],
     "gitLink": "https://github.com/Pir4a/OpenClassrooms-projet-4.git",
     "liveLink": "https://open-classrooms-projet-4.vercel.app/",
-    "projectImg": "/src/assets/Kasa.png"
+    "projectImg": "/static/Kasa.png"
   },
   {
     "projectName": "Mon Vieux Grimoire (OC)",
@@ -24,7 +24,7 @@
     "technos": ["NodeJS", "MongoDB"],
     "gitLink": "https://github.com/Pir4a/EcommerceWebsite",
     "liveLink": "https://eshopsupplements.netlify.app/",
-    "projectImg": "/src/assets/grimoire.png"
+    "projectImg": "/static/grimoire.png"
   },
   {
     "projectName": "Zyzz Gym",
@@ -33,6 +33,6 @@
     "technos": ["React", "TypeScript", "TailwindCSS"],
     "gitLink": "https://github.com/Pir4a/gym-website.git",
     "liveLink": "https://github.com/Pir4a/gym-website",
-    "projectImg": "/src/assets/ZyzzGymm.png"
+    "projectImg": "/static/ZyzzGymm.png"
   }
 ]
