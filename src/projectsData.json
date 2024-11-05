@@ -19,11 +19,11 @@
   },
   {
     "projectName": "Mon Vieux Grimoire (OC)",
-    "technosImg": ["FaNodeJs", "FaDatabase"],
     "projectDescription": "Back-End d'un site de notation de livre en NodeJs, projet de formation OpenClassrooms",
+    "technosImg": ["FaNodeJs", "FaDatabase"],
     "technos": ["NodeJS", "MongoDB"],
-    "gitLink": "https://github.com/Pir4a/EcommerceWebsite",
-    "liveLink": "https://eshopsupplements.netlify.app/",
+    "gitLink": "https://github.com/Pir4a/OpenClassrooms-p5",
+    "liveLink": "https://github.com/Pir4a/OpenClassrooms-p5",
     "projectImg": "/static/grimoire.png"
   },
   {
