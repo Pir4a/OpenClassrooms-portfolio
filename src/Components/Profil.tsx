@@ -33,8 +33,8 @@ function Profil() {
 
         <p className=" leading-7 2xl:w-3/5 lg:w-3/5 w-5/6 lg:text-lg">
           Salut, moi c'est Stéphane, développeur Web en recherche d'un CDI/CDD.
-          Diplomé d'une formation Developpeur Web OpenClassrooms, je code et ai
-          appris ce dernier en autodidacte depuis Novembre 2023.
+          <br /> Diplomé d'une formation Developpeur Web OpenClassrooms, je code
+          et ai appris ce dernier en autodidacte depuis Novembre 2023.
           <br /> Ma passion est de créer et développer un UI/UX propre. Ma main
           stack est actuellement React en combinaison avec Typescript et
           Tailwind CSS
