@@ -32,7 +32,7 @@
     "projectDescription": "Front-End d'un site de salle de sport (projet personnel)",
     "technos": ["React", "TypeScript", "TailwindCSS"],
     "gitLink": "https://github.com/Pir4a/gym-website.git",
-    "liveLink": "https://github.com/Pir4a/gym-website",
+    "liveLink": "https://gym-website-ashy.vercel.app/",
     "projectImg": "/static/ZyzzGymm.png"
   }
 ]
