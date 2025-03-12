@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react"
 import { FaGithub } from "react-icons/fa"
-import { FaCircleArrowUp, FaLinkedin } from "react-icons/fa6"
+import { FaCircleArrowUp, FaLinkedin, FaTurnDown } from "react-icons/fa6"
 
 function Hero() {
   const [goUp, setGoUp] = useState(false)
+  const [isScrollDown, setScrollDown] = useState(false)
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  const scrollToProfil = () => {
+    window.scrollTo({ top: 840, behavior: "smooth" })
   }
 
   useEffect(() => {
@@ -24,6 +29,20 @@ function Hero() {
     }
   }, [])
 
+  useEffect(() => {
+    const onPageScroll = () => {
+      if (window.scrollY > 330) {
+        setScrollDown(true)
+      } else {
+        setScrollDown(false)
+      }
+    }
+    window.addEventListener("scroll", onPageScroll)
+
+    return () => {
+      window.removeEventListener("scroll", onPageScroll)
+    }
+  }, [])
   return (
     <>
       <div className="flex flex-col lg:gap-16 h-dvh lg:pl-[18%] items-center lg:items-start text-center lg:text-left justify-center px-4 lg:px-0 ">
@@ -61,6 +80,16 @@ function Hero() {
             stephane.dedu@gmail.com
             <span className="absolute -z-10 left-0 right-0 bottom-0 h-[3px] bg-blue-600 group-hover:h-full transition-all duration-300"></span>
           </a>
+        </p>
+
+        <p
+          onClick={scrollToProfil}
+          className={`${
+            isScrollDown ? "opacity-0" : "opacity-100"
+          } hidden cursor-pointer lg:absolute hover:text-[2.5rem] bottom-[4rem] lg:flex justify-center items-center text-4xl gap-4 transition-all duration-300`}
+        >
+          Voir mes projets
+          <FaTurnDown className="mt-8" />
         </p>
       </div>
       <div
