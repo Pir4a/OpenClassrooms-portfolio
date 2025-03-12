@@ -86,9 +86,9 @@ function Hero() {
           onClick={scrollToProfil}
           className={`${
             isScrollDown ? "opacity-0" : "opacity-100"
-          } hidden cursor-pointer lg:absolute hover:text-[2.5rem] bottom-[4rem] lg:flex justify-center items-center text-4xl gap-4 transition-all duration-300`}
+          } hidden cursor-pointer lg:absolute hover:text-[2.5rem] bottom-[4rem] lg:flex justify-center items-center text-4xl gap-3 transition-all duration-300`}
         >
-          Voir mes projets
+          Voir mon profil
           <FaTurnDown className="mt-8" />
         </p>
       </div>
