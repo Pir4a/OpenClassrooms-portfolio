@@ -54,6 +54,7 @@ function Competences() {
           <span>
             <h3 className="font-medium text-lg">Design</h3>
             <p>Sketch</p>
+            <p>Figma</p>
           </span>
         </div>
       </div>
