@@ -54,7 +54,7 @@ function Hero() {
         </h2>
         <h3 className="text-2xl lg:text-4xl max-w-[660px] opacity-85 leading-[3.5rem] ">
           Je m'appelle <b className="opacity-85">Stéphane Dedu</b>, Developpeur
-          Front-end.
+          FullStack.
           <br />
           J'aime construire de belles interfaces & expériences 👨‍💻
           <span className="flex gap-4 py-4 lg:mx-0 lg:justify-start justify-center">
@@ -71,7 +71,7 @@ function Hero() {
           </span>
         </h3>
         <p className="text-lg pt-16">
-          Contactez-moi 👉{" "}
+          Contactez-moi 👉
           <a
             href="mailto: stephane.dedu@gmail.com"
             target="_blank"
