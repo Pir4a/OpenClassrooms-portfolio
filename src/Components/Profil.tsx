@@ -37,8 +37,8 @@ function Profil() {
           OpenClassrooms, je code et ai appris ce dernier en autodidacte depuis
           Novembre 2021.
           <br /> Ma passion est de créer et développer un UI/UX propre. Ma main
-          stack est actuellement React en combinaison avec Typescript et
-          Tailwind CSS
+          stack est actuellement React et NodeJS en combinaison avec Typescript
+          et Tailwind CSS
         </p>
       </div>
     </div>
